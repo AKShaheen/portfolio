@@ -4,6 +4,7 @@ import WorkPage from "./pages/WorkPage";
 import AboutPage from "./pages/AboutPage";
 import Navigation from "./components/Navigation";
 import Contact from "./components/Contact";
+import AnimatedBackground from "./components/AnimatedBackground";
 import { motion, AnimatePresence } from "framer-motion";
 
 
@@ -48,6 +49,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <div className="bg-background min-h-screen text-white">
+        <AnimatedBackground />
         <Navigation />
         <AnimatePresence mode="wait">
           <Routes>
