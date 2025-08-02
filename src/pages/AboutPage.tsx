@@ -52,7 +52,7 @@ const disciplines = [
 const AboutPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-background text-white">
-      <div className="max-w-4xl mx-auto px-6 pt-32 pb-16">
+      <div className="max-w-sm sm:max-w-md md:max-w-3xl lg:max-w-4xl mx-auto px-4 sm:px-6 pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -60,7 +60,7 @@ const AboutPage: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="mb-20"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight tracking-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 sm:mb-8 leading-tight tracking-tight break-words">
             Full-Stack Software Engineer specializing in full-cycle product development and performance optimization.
           </h1>
         </motion.div>
@@ -70,21 +70,21 @@ const AboutPage: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="space-y-8 mb-24"
+          className="space-y-6 sm:space-y-8 mb-16 sm:mb-20 md:mb-24"
         >
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl px-1 sm:px-0">
             I'm Abdelaziz, a Full-Stack Software Engineer skilled in full-cycle product development: from UX prototyping to cloud deployment. 
             With expertise in React/Next.js, TypeScript, Node.js/Nest.js, and SQL/NoSQL databases, I specialize in creating efficient, 
             scalable solutions that drive business growth and operational efficiency.
           </p>
           
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl px-1 sm:px-0">
             I have a proven track record in performance optimization, test automation, and cross-functional collaboration. 
             At Breadfast, I developed internal dashboards for 750+ users and increased automated test coverage from 15% to 80%, 
             while implementing Datadog observability that reduced critical bug MTTR by 30%.
           </p>
           
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl px-1 sm:px-0">
             My diverse background spans software engineering, UI/UX design, and technical education. I've successfully revamped mobile applications 
             that improved sign-ups by 20% and revenue by 40%, while also leading programming instruction for 1,500+ students. 
             I'm passionate about delivering innovative solutions that align with user expectations and achieve measurable business results.
