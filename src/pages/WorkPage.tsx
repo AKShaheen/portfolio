@@ -9,7 +9,7 @@ const WorkPage: React.FC = () => {
     <div className="min-h-screen bg-background text-white">
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col items-center justify-center px-6 bg-background pt-20">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           {/* Main heading */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}

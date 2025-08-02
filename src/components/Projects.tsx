@@ -38,23 +38,23 @@ const projects = [
 
 const Projects: React.FC = () => {
   return (
-    <section className="py-24 px-6 bg-background" id="projects">
+    <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-background" id="projects">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Selected Work
           </h2>
         </motion.div>
 
         {/* Projects List */}
-        <div className="space-y-12">
+        <div className="space-y-6 sm:space-y-8 md:space-y-12">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -69,24 +69,24 @@ const Projects: React.FC = () => {
                 href={project.repo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block p-8 rounded-2xl bg-gray-900/30 border border-gray-800/50 hover:bg-gray-800/30 hover:border-gray-700/50 transition-all duration-300"
+                className="block p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl bg-gray-900/30 border border-gray-800/50 hover:bg-gray-800/30 hover:border-gray-700/50 transition-all duration-300"
               >
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                  <h3 className="text-2xl font-bold text-white group-hover:text-gray-200 transition-colors">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3 sm:mb-4">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white group-hover:text-gray-200 transition-colors">
                     {project.title}
                   </h3>
-                  <span className="text-gray-400 text-sm mt-1 md:mt-0">{project.year}</span>
+                  <span className="text-gray-400 text-xs sm:text-sm mt-1 md:mt-0">{project.year}</span>
                 </div>
                 
-                <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed mb-3 sm:mb-4">
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {project.tech.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 text-sm bg-gray-800/50 text-gray-300 rounded-full border border-gray-700/50"
+                      className="px-2 sm:px-3 py-1 text-xs sm:text-sm bg-gray-800/50 text-gray-300 rounded-full border border-gray-700/50"
                     >
                       {tech}
                     </span>

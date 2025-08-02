@@ -21,7 +21,7 @@ const ScrollToTop: React.FC = () => {
       animate={visible ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       transition={{ duration: 0.3 }}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="fixed bottom-6 right-6 bg-accent hover:bg-accent-dark text-white p-3 rounded-full shadow-lg z-50"
+      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-accent hover:bg-accent-dark text-white p-2.5 sm:p-3 rounded-full shadow-lg z-50 text-sm sm:text-base"
       aria-label="Scroll to top"
       style={{ display: visible ? 'block' : 'none' }}
     >

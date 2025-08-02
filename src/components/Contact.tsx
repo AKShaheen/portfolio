@@ -29,7 +29,7 @@ const Contact: React.FC = () => {
 
   return (
     <motion.section
-      className="bg-section px-6 py-20 relative text-white"
+      className="bg-section px-4 sm:px-6 py-12 sm:py-16 md:py-20 relative text-white"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -39,10 +39,10 @@ const Contact: React.FC = () => {
         <div className="w-full h-full bg-gradient-to-b from-transparent via-accent/20 to-transparent blur-lg" />
       </div>
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-4xl font-bold mb-6 text-center">Contact Me</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-center">Contact Me</h2>
         <motion.form
           onSubmit={handleSubmit}
-          className="space-y-4"
+          className="space-y-3 sm:space-y-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
             name="user_name"
             required
             placeholder="Your Name"
-            className="w-full px-4 py-2 rounded bg-background text-white focus:ring-2 focus:ring-accent transition-all duration-200"
+            className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded bg-background text-white focus:ring-2 focus:ring-accent transition-all duration-200 text-sm sm:text-base"
             whileFocus={{ scale: 1.03, boxShadow: "0 0 0 2px #00c6ff" }}
             whileHover={{ scale: 1.02 }}
           />
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
             name="user_email"
             required
             placeholder="Your Email"
-            className="w-full px-4 py-2 rounded bg-background text-white focus:ring-2 focus:ring-accent transition-all duration-200"
+            className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded bg-background text-white focus:ring-2 focus:ring-accent transition-all duration-200 text-sm sm:text-base"
             whileFocus={{ scale: 1.03, boxShadow: "0 0 0 2px #00c6ff" }}
             whileHover={{ scale: 1.02 }}
           />
@@ -69,13 +69,13 @@ const Contact: React.FC = () => {
             name="message"
             required
             placeholder="Your Message"
-            className="w-full px-4 py-2 rounded bg-background text-white h-32 focus:ring-2 focus:ring-accent transition-all duration-200"
+            className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded bg-background text-white h-24 sm:h-32 focus:ring-2 focus:ring-accent transition-all duration-200 text-sm sm:text-base resize-none"
             whileFocus={{ scale: 1.03, boxShadow: "0 0 0 2px #00c6ff" }}
             whileHover={{ scale: 1.02 }}
           />
           <motion.button
             type="submit"
-            className="bg-accent hover:bg-accent-dark px-6 py-2 rounded text-white shadow-lg"
+            className="bg-accent hover:bg-accent-dark px-4 sm:px-6 py-2.5 sm:py-3 rounded text-white shadow-lg text-sm sm:text-base font-medium"
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.97 }}
           >

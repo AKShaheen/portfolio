@@ -3,36 +3,36 @@ import { motion } from "framer-motion";
 
 const About: React.FC = () => {
   return (
-    <section className="py-24 px-6 bg-background" id="about">
+    <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-background" id="about">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 md:mb-8">
             About Me
           </h2>
         </motion.div>
 
         {/* Content */}
         <motion.div
-          className="space-y-8"
+          className="space-y-6 sm:space-y-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <div className="text-center">
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-4 sm:mb-6 md:mb-8 px-2 sm:px-0">
               I'm a full-stack developer with a passion for building responsive and efficient web applications.
               I enjoy transforming ideas into digital experiences and solving real-world problems through code.
             </p>
             
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto mb-4 sm:mb-6 md:mb-8 px-2 sm:px-0">
               With expertise spanning frontend and backend technologies, I focus on creating seamless user experiences 
               while maintaining robust, scalable architectures. I'm always eager to learn new technologies and 
               tackle challenging projects.
@@ -41,7 +41,7 @@ const About: React.FC = () => {
 
           {/* Experience Highlights */}
           <motion.div
-            className="grid md:grid-cols-3 gap-8 mt-16"
+            className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mt-8 sm:mt-12 md:mt-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

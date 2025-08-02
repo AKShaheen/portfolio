@@ -49,27 +49,27 @@ const itemVariants = {
 
 const Skills: React.FC = () => {
   return (
-    <section className="py-24 px-6 bg-background" id="skills">
+    <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-background" id="skills">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">
             Skills & Technologies
           </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto px-2 sm:px-0">
             Technologies I work with to bring ideas to life
           </p>
         </motion.div>
 
         {/* Skills Grid */}
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -82,7 +82,7 @@ const Skills: React.FC = () => {
               className="group"
             >
               <motion.div
-                className="relative p-6 rounded-2xl bg-gray-900/50 border border-gray-800/50 backdrop-blur-sm hover:bg-gray-800/50 transition-all duration-300 cursor-pointer"
+                className="relative p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl bg-gray-900/50 border border-gray-800/50 backdrop-blur-sm hover:bg-gray-800/50 transition-all duration-300 cursor-pointer"
                 whileHover={{ 
                   scale: 1.05,
                   y: -5,

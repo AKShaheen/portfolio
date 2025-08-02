@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 bg-background" id="hero">
+    <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 bg-background" id="hero">
       <div className="max-w-4xl mx-auto text-center">
         {/* Main heading */}
         <motion.div
@@ -13,10 +13,10 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 md:mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-3 sm:mb-4 md:mb-6 leading-tight">
             Full-Stack Developer.
           </h1>
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
             Interfaces.<br className="sm:hidden" /> Systems.<br className="sm:hidden" /> Strategy.
           </h2>
         </motion.div>
@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg sm:text-xl md:text-2xl text-gray-400 mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0"
+          className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400 mb-6 sm:mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed px-2 sm:px-4 md:px-0"
         >
           I'm Abdelaziz, a full-stack developer based in Palestine with expertise in modern web technologies. 
           I specialize in crafting scalable applications, aligning technical solutions with business objectives, 
@@ -38,18 +38,18 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+          className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center"
         >
           <a
             href="https://drive.google.com/file/d/1ylGdcqqzTO4SWb2s37Iq6l9r3UxtkEoq/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-100 transition-colors duration-300"
+            className="inline-block px-6 sm:px-8 py-2.5 sm:py-3 bg-white text-black font-medium rounded-lg hover:bg-gray-100 transition-colors duration-300 text-sm sm:text-base"
           >
             View Resume
           </a>
           
-          <div className="flex gap-6">
+          <div className="flex gap-4 sm:gap-6">
             <motion.a
               href="https://github.com/AKShaheen"
               target="_blank"
