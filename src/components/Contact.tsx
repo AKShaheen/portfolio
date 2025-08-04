@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
         >
           <motion.a
             href="mailto:abdelazizshaheen162@gmail.com"
-            className="inline-block text-2xl sm:text-3xl md:text-4xl font-bold text-accent hover:text-accent-dark transition-colors duration-300 cursor-pointer"
+            className="inline-block text-md sm:text-2xl md:text-3xl lg:text-4xl font-bold text-accent hover:text-accent-dark transition-colors duration-300 cursor-pointer px-4"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

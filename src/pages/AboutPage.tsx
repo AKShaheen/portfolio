@@ -36,16 +36,16 @@ const education = [
 
 const disciplines = [
   "Full-Stack Development",
-  "React/Next.js",
-  "TypeScript/JavaScript",
-  "Node.js/Nest.js",
+  "React",
+  "TypeScript",
+  "Node.js",
   "SQL/NoSQL Databases",
   "CI/CD & Testing",
   "UI/UX Design",
+  "Revamp Stratiges",
   "Performance Optimization",
   "Cloud Deployment",
   "Datadog Observability",
-  "Agile/Scrum",
   "Test Automation"
 ];
 
@@ -170,9 +170,9 @@ const AboutPage: React.FC = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
-                className="p-4 rounded-lg bg-gray-900/30 border border-gray-800/50 text-center"
+                className="p-4 rounded-lg bg-gray-900/30 border border-gray-800/50 text-center flex items-center justify-center"
               >
-                <span className="text-gray-300 text-sm font-medium">{discipline}</span>
+                <span className="text-gray-300 text-sm font-medium break-words">{discipline}</span>
               </motion.div>
             ))}
           </div>
