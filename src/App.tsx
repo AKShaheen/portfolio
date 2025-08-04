@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import WorkPage from "./pages/WorkPage";
 import AboutPage from "./pages/AboutPage";
 import Navigation from "./components/Navigation";
@@ -70,6 +70,8 @@ const App: React.FC = () => {
                 </PageTransition>
               } 
             />
+            {/* Catch-all route - redirect any unknown paths to work page */}
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </AnimatePresence>
         <ScrollToTop />

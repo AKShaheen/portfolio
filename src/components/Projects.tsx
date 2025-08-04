@@ -32,7 +32,6 @@ const projects = [
     description: "Led team to develop a comprehensive Learning Management System platform serving 3,000 students with 40+ courses.",
     tech: ["React", "Laravel", "MySQL", "PHP"],
     image: "/images/lms-project.png",
-    repo: "",
   },
 ];
 
