@@ -1,21 +1,32 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaGitAlt, FaDatabase } from "react-icons/fa";
-import { SiTypescript, SiTailwindcss, SiPostgresql, SiDocker, SiNestjs, SiDatadog, SiDotnet, SiSharp } from "react-icons/si";
-
+import { SiJira ,SiVitest ,SiPostman ,SiRedis ,SiFastapi ,SiVite ,SiExpress ,SiRedux ,SiPython ,SiTypescript, SiJavascript, SiTailwindcss, SiPostgresql, SiDocker, SiNestjs, SiDatadog, SiDotnet, SiSharp } from "react-icons/si";
+import { FaFigma,FaLinux ,FaReact, FaNodeJs, FaGitAlt, FaDatabase } from "react-icons/fa";
 const skills = [
-  { icon: <FaReact size={32} />, label: "React/Next.js", category: "Frontend" },
+  { icon: <SiJavascript size={32} />, label: "JavaScript", category: "Language" },
   { icon: <SiTypescript size={32} />, label: "TypeScript", category: "Language" },
+  { icon: <SiPython size={32} />, label: "Python", category: "Language" },
+  { icon: <SiSharp size={32} />, label: "C#", category: "Language" },
+  { icon: <FaReact size={32} />, label: "React", category: "Frontend" },
+  { icon: <SiTailwindcss size={32} />, label: "Tailwind CSS", category: "Frontend" },
+  { icon: <SiRedux  size={32} />, label: "Redux/Zustand", category: "Frontend" },
+  { icon: <SiVite  size={32} />, label: "Webpack/Vite", category: "Frontend" },
+  { icon: <SiExpress size={32} />, label: "Express.js", category: "Backend" },
+  { icon: <SiFastapi size={32} />, label: "FastAPI", category: "Backend" },
   { icon: <FaNodeJs size={32} />, label: "Node.js", category: "Backend" },
   { icon: <SiNestjs size={32} />, label: "NestJS", category: "Backend" },
   { icon: <SiDotnet size={32} />, label: "ASP.NET Core", category: "Backend" },
-  { icon: <SiSharp size={32} />, label: "C#", category: "Language" },
-  { icon: <SiPostgresql size={32} />, label: "SQL Server", category: "Database" },
+  { icon: <SiRedis size={32} />, label: "Redis", category: "Backend" },
+  { icon: <SiPostgresql size={32} />, label: "SQL Databases", category: "Database" },
   { icon: <FaDatabase size={32} />, label: "MongoDB", category: "Database" },
-  { icon: <SiDocker size={32} />, label: "Docker", category: "DevOps" },
-  { icon: <FaGitAlt size={32} />, label: "GitHub Actions", category: "CI/CD" },
-  { icon: <SiTailwindcss size={32} />, label: "Responsive UI", category: "Frontend" },
-  { icon: <SiDatadog size={32} />, label: "Datadog", category: "Monitoring" },
+  { icon: <SiDocker size={32} />, label: "Docker", category: "Tools" },
+  { icon: <FaGitAlt size={32} />, label: "Git", category: "Tools" },
+  { icon: <SiDatadog size={32} />, label: "Datadog", category: "Tools" },
+  { icon: <SiPostman size={32} />, label: "Postman", category: "Tools" },
+  { icon: <SiVitest size={32} />, label: "Jest/Vitest", category: "Testing frameworks" },
+  { icon: <FaLinux size={32} />, label: "Linux", category: "OS" },
+  { icon: <FaFigma size={32} />, label: "Figma", category: "Design Tool" },
+  { icon: <SiJira size={32} />, label: "Jira", category: "Project Management" },
 ];
 
 const containerVariants = {
