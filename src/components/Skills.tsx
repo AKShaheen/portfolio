@@ -23,10 +23,10 @@ const skills = [
   { icon: <FaGitAlt size={32} />, label: "Git", category: "Tools" },
   { icon: <SiDatadog size={32} />, label: "Datadog", category: "Tools" },
   { icon: <SiPostman size={32} />, label: "Postman", category: "Tools" },
-  { icon: <SiVitest size={32} />, label: "Jest/Vitest", category: "Testing frameworks" },
+  { icon: <SiVitest size={32} />, label: "Jest/Vitest", category: "Testing" },
   { icon: <FaLinux size={32} />, label: "Linux", category: "OS" },
   { icon: <FaFigma size={32} />, label: "Figma", category: "Design Tool" },
-  { icon: <SiJira size={32} />, label: "Jira", category: "Project Management" },
+  { icon: <SiJira size={32} />, label: "Jira", category: "PM" },
 ];
 
 const containerVariants = {
